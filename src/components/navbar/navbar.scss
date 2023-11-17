@@ -1,0 +1,103 @@
+.navbar {
+    height: 80px;
+    background-color: beige;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 30px;
+
+        .left {
+            display: none;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+
+            font-size: clamp(0.8rem, 0.7rem + 0.9vw, 1.5rem);
+            letter-spacing: 2px;
+
+            h2 {
+                display: none;
+                visibility: hidden;
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            .icons {
+                display: flex;
+                gap: 15px;
+                color: lightgray;
+                cursor: pointer;
+
+                .MuiSvgIcon-root {
+                    color: black;
+                    width: 25px;
+                    height: 25px;
+                }
+
+                .cart-icon {
+                    position: relative;
+
+                    div {
+                        // position cart counter
+                        font-size: 12px;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: cornflowerblue;
+                        color: white;
+                        position: absolute;
+                        top: -12px;
+                        right: -12px;
+
+                        // center number within cart counter
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        @media screen and (min-width: 600px) {
+            .center {
+
+                h2 {
+                    display: block;
+                    visibility: visible;
+
+                    font-size: clamp(0.7rem, 0.5rem + 0.7vw, 1rem);
+                    color: darkred;
+                    text-shadow: none;
+                    padding-top: 0.2rem;
+                }
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+                gap: 25px;
+            }
+        }
+    }
+}

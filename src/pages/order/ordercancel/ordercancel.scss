@@ -1,0 +1,25 @@
+@import '../../../style/variables.scss';
+
+.order-cancel {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-block: 35vh;
+
+    div {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+      
+        h2 {
+          font-size: 48px;
+        }
+      
+        p {
+          margin-bottom: 10px;
+        }
+      }
+}

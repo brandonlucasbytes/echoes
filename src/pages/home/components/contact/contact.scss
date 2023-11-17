@@ -1,0 +1,52 @@
+@import '../../../../style/variables.scss';
+
+.contact {
+    background-color: hsl(60, 26%, 81%);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: clamp(14px, 16px + 1vw, 18px);
+
+    .wrapper {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 1rem;
+  
+      input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+      }
+      button {
+        padding: 10px;
+        color: white;
+        background: #333;
+        border-radius: 0 5px 5px 0;
+        border: none;
+      }
+
+      .success-popup {
+        color: black;
+      }
+  
+      .icons {
+        display: flex;
+        gap: 10px;
+
+        .MuiSvgIcon-root {
+          color: black;
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .wrapper {
+        flex-direction: column;
+      }
+    }
+  }
