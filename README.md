@@ -8,7 +8,7 @@
 
 ## Tech
 
-- **Architecture:** Engineered with React and Redux for seamless user interactions.
-- **User Interface:** Crafted with responsive design for a dynamic and intuitive experience.
+- **Architecture:** Engineered with React for seamless user interactions.
+- **State Management:** Implementing Redux for efficient and centralized state management.
 - **Secure Transactions:** Using Stripe for safe and efficient payment processing.
-- **Stylish Aesthetics:** Enhanced with Sass for sleek and modifiable styles - creating a simple yet satisfying user experience.
+- **User Interface:** Enhanced with Sass for sleek and modifiable styles - creating a simple yet satisfying user experience.
